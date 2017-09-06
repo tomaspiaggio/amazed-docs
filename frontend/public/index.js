@@ -1,4 +1,5 @@
 var routes = document.querySelector('.mod--routes');
+var spinner = document.querySelector('.spinner');
 
 function getRoutes(callback){
     firebase.database()
@@ -7,6 +8,8 @@ function getRoutes(callback){
         .then((snapshot) => {
             var firebaseList = snapshot.val();
             var firebaseKeys = Object.keys(firebaseList);
+            spinner.classList.add('spinner--invisible');
+            routes.classList.remove('mod--loading');
             for(var i = 0; i < firebaseKeys.length; i++)
                 callback(firebaseList[firebaseKeys[i]]);
         });
