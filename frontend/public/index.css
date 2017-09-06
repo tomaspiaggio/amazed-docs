@@ -1,0 +1,27 @@
+body {
+    font-family: 'Monaco', sans-serif;
+    background: url() no-repeat;
+    backgruond-size: cover;
+}
+
+header {
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.mod {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 712px;
+    width: 100%;
+    margin:0 auto;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.mod--routes{
+    margin-top: 100px;
+}
+
+.mod__route {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
